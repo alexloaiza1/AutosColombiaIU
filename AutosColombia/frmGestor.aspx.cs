@@ -24,5 +24,7 @@ namespace AutosColombia
             gestor objControlGestor = new gestor(objGes);
             Label2.Text = objControlGestor.guardar();
         }
+
+        
     }
 }

@@ -49,7 +49,7 @@
             Nombre<asp:TextBox ID="txtNombreE" runat="server" CssClass="auto-style6" Width="380px" Height="44px"> </asp:TextBox>
         </div>
          <div class="form-group">
-            Apellidos<asp:TextBox ID="txtApellidos" runat="server" CssClass="auto-style6" Width="380px" Height="44px"></asp:TextBox>
+            Apellidos<asp:TextBox ID="txtApellidos" runat="server" CssClass="auto-style6" Width="366px" Height="44px"></asp:TextBox>
         </div>
          <div class="form-group">
             Telefono<asp:TextBox ID="txtTelefono" runat="server" CssClass="auto-style7" Width="380px" Height="42px"></asp:TextBox>
@@ -62,7 +62,7 @@
         </div>
          <div class="form-group">
            Contraseña<asp:TextBox ID="txtContrasena" runat="server" CssClass="auto-style10" Width="380px" Height="46px"></asp:TextBox>
-                        </div>
+            </div>
                    
                     <div class="auto-style1">
                    </div>
