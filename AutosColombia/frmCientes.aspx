@@ -48,10 +48,7 @@
 			
 
         <div class="form-group">
-        <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:AutosColombia%>" SelectCommand="SELECT * FROM [GESTORES]"></asp:SqlDataSource>
-        </div>
-         <div class="form-group">
-
+        
             Cedula<asp:TextBox ID="txtCedula" runat="server" CssClass="auto-style12" Width="380px" Height="41px"></asp:TextBox>
          </div>
          <div class="form-group">
@@ -67,9 +64,9 @@
             Direccion<asp:TextBox ID="txtDireccion" runat="server" CssClass="auto-style8" Width="380px" Height="44px"></asp:TextBox>
         </div>
         <div class="form-group">
-					Gestor ID<asp:DropDownList ID="DropDownList2" runat="server" DataSourceID="SqlDataSource3" DataTextField="id" DataValueField="id" Style="margin-left: 59px" Height="33px" Width="263px">
-					</asp:DropDownList>
-				</div>
+            Gestor ID<asp:TextBox ID="txtGestor" runat="server" CssClass="auto-style8" Width="380px" Height="44px"></asp:TextBox>
+        </div>
+       
             <asp:Button ID="btnGuardarE" runat="server" Text="Guardar" OnClick="btnGuardarE_Click" CssClass="btn btn-success btn-lg btn-block" Height="44px" Width="535px"  OnClientClick="return valida();"/>
         <br />
         <br />

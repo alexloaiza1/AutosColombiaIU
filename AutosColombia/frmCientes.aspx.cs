@@ -19,8 +19,7 @@ namespace AutosColombia
         protected void btnGuardarE_Click(object sender, EventArgs e)
         {
             int cedula = int.Parse(txtCedula.Text);
-            string Gestor = DropDownList2.Items[DropDownList2.SelectedIndex].ToString();
-            int idGestor = int.Parse(Gestor);
+           int idGestor = int.Parse(txtGestor.Text);
             CLIENTE objClie = new CLIENTE(cedula, txtNombreE.Text, txtApellidos.Text, txtTelefono.Text, txtDireccion.Text,idGestor );
             cliente objControlGestor = new cliente(objClie);
             Label2.Text = objControlGestor.guardar();

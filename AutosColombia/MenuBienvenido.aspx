@@ -28,7 +28,7 @@
         
         <div class="container">
                 <div class="overlay">
-                       <a href="FrmGestor.aspx"><img src="AgregarCliente.png" alt="Avatar" class="auto-style7" id="gestionCliente" runat="server"/></a>
+                       <a href="FrmCientes.aspx"><img src="AgregarCliente.png" alt="Avatar" class="auto-style7" id="gestionCliente" runat="server"/></a>
                 </div>
             <div>
                 <h2>Registrar Cliente</h2>
