@@ -67,11 +67,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AgregarCliente.png" />
     <Content Include="avatar2.png" />
     <Content Include="css\estilos.css" />
+    <Content Include="css\estilos2.css" />
     <Content Include="css\estilos3.css" />
+    <Content Include="frmCientes.aspx" />
     <Content Include="frmGestor.aspx" />
+    <Content Include="js\ValidacionesLogin.js" />
     <Content Include="Login.aspx" />
+    <Content Include="MenuBienvenido.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
@@ -104,8 +109,16 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller\cliente.cs" />
     <Compile Include="Controller\conexion.cs" />
     <Compile Include="Controller\gestor.cs" />
+    <Compile Include="frmCientes.aspx.cs">
+      <DependentUpon>frmCientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmCientes.aspx.designer.cs">
+      <DependentUpon>frmCientes.aspx</DependentUpon>
+    </Compile>
     <Compile Include="frmGestor.aspx.cs">
       <DependentUpon>frmGestor.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -119,6 +132,13 @@
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MenuBienvenido.aspx.cs">
+      <DependentUpon>MenuBienvenido.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MenuBienvenido.aspx.designer.cs">
+      <DependentUpon>MenuBienvenido.aspx</DependentUpon>
     </Compile>
     <Compile Include="Models\CLIENTE.cs" />
     <Compile Include="Models\GESTOR.cs" />
@@ -135,9 +155,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="js\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

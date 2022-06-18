@@ -18,12 +18,39 @@ namespace AutosColombia
 
         }
 
+
+        protected void btnIngresar_Click()
+        {
+
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void Login1_Authenticate(object sender, AuthenticateEventArgs e)
+        {
+
+        }
+
+        protected void Button1_Click1(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void Button1_Click2(object sender, EventArgs e)
+        {
+
+        }
+
+
         protected void Button1_Click3(object sender, EventArgs e)
         {
             try
             {
                 DataSet objDs = null;
-                String usu;
+               String usu;
                 String contra;
                 int cedula = int.Parse(txtUsuario.Text);
                 String sql = "SELECT * FROM USUARIOS WHERE FKGESTOR='" + cedula + "'AND CONTRASEÑA='" + txtContraseña.Text + "'";
