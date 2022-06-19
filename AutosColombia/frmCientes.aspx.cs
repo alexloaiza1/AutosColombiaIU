@@ -9,7 +9,7 @@ using AutosColombia.Models;
 
 namespace AutosColombia
 {
-    public partial class frmGestor : System.Web.UI.Page
+    public partial class frmCientes : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -18,13 +18,11 @@ namespace AutosColombia
 
         protected void btnGuardarE_Click(object sender, EventArgs e)
         {
-
-            int cedula =int.Parse(txtCedula.Text);
-            GESTOR objGes = new GESTOR(cedula,txtNombreE.Text,txtApellidos.Text,txtTelefono.Text,txtCargo.Text,txtEmail.Text,txtContrasena.Text);
-            gestor objControlGestor = new gestor(objGes);
+            int cedula = int.Parse(txtCedula.Text);
+           int idGestor = int.Parse(txtGestor.Text);
+            CLIENTE objClie = new CLIENTE(cedula, txtNombreE.Text, txtApellidos.Text, txtTelefono.Text, txtDireccion.Text,idGestor );
+            cliente objControlGestor = new cliente(objClie);
             Label2.Text = objControlGestor.guardar();
         }
-
-        
     }
 }
