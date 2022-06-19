@@ -19,29 +19,23 @@ namespace AutosColombia.Controller
 
 
 
-       public String guardar()
+        public String guardar()
         {
             String msg;
             int cedula = objGestor.Cedula;
             String nombre = objGestor.Nombre;
-            String apellidos= objGestor.Apellidos;
-            String telefono= objGestor.Telefono;
-            String cargo= objGestor.Cargo;
-            String email= objGestor.Email;
+            String apellidos = objGestor.Apellidos;
+            String telefono = objGestor.Telefono;
+            String cargo = objGestor.Cargo;
+            String email = objGestor.Email;
             String contrasena = objGestor.Contrasena;
-            String comandoSql = "INSERT INTO GESTORES VALUES('" + cedula+ "','" + nombre + "','" + apellidos + "','" + telefono + "', '" + cargo + "', '" + email + "','" + contrasena + "')";
+            String comandoSql = "INSERT INTO GESTORES VALUES('" + cedula + "','" + nombre + "','" + apellidos + "','" + telefono + "', '" + cargo + "', '" + email + "','" + contrasena + "')" ;
+            String comandoSql2 = "INSERT INTO USUARIOS VALUES('" + cedula + "','" + contrasena + "')";
             conexion objConexion = new conexion();
             objConexion.abrirBd();
-            msg = objConexion.ejecutarComandoSql(comandoSql);
+            msg = objConexion.ejecutarComandoSql(comandoSql+comandoSql2);
             objConexion.cerrarBd();
             return msg;
-
-
-            
         }
     }
-
-
-
-
 }
